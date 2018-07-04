@@ -1,5 +1,17 @@
 # tips
 
+## Installation
+
+### Image Magick
+```
+brew install imagemagick
+```
+
+### FFmpeg
+```
+brew install ffmpeg
+```
+
 ## JPG or PNG to PDF
 
 ```
