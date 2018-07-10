@@ -4,6 +4,42 @@
 
 https://www.tekrevue.com/tip/delete-garageband/
 
+Apple’s GarageBand is a fantastic app that brings powerful audio creation and editing tools to music lovers of all levels. But it’s also a huge waste of space for users who don’t need it. Whether you’re musically challenged like us, or if you already use more advanced software like Logic Pro, Audition, or Pro Tools, here’s how you can delete GarageBand from your Mac, and save several gigabytes of storage space in the process.
+
+Manually Delete GarageBand
+As a rich media application, GarageBand installs relatively large groups of media files to several locations on your Mac’s drive. Based on a clean install of GarageBand 10.0.2 on OS X 10.9.3, key locations of large files include:
+
+Macintosh HD/Applications/GarageBand.app (1.16GB)
+Macintosh HD/Library/Application Support/GarageBand (995MB)
+Macintosh HD/Library/Application Support/Logic (880MB)
+Macintosh HD/Library/Audio/Apple Loops (up to 10GB)*
+*Note that the size of the Apple Loops directory will vary depending on the number and type of loops downloaded by the user. You should not delete this folder (or the Logic folder) if you are using Logic Pro.
+
+Under normal circumstances, however, users looking to delete GarageBand can expect to save around 3GB of space. It may not seem like much, especially as storage capacities continue to rise, but 3GB can make a huge difference for those with small SSDs.
+
+To delete GarageBand, first quit all open applications and make a full system backup to be on the safe side. This can be accomplished via something like Time Machine or with the creation of a bootable clone with an app like Carbon Copy Cloner.
+
+Once you’re all backed up, head to the locations listed above and delete them one by one, authenticating with an administrator account if asked. If you need a quick way to get to the folders in your System Library folder, open Finder and press Command-Shift-G to launch the Go to Folder window. Then just paste the folder’s location into the box and press Go.
+
+With all files and folders moved to the Trash, right-click on the Trash icon in your Dock and choose Empty Trash. Finally, reboot to ensure that everything related to GarageBand is gone.
+
+Delete GarageBand with a Third Party App
+The above process nukes the GarageBand app and takes care of its large files, but there are still some small preference and support files that may be left behind. You can remove these manually by searching for “GarageBand” in your various system folders, or you can quickly hit them all with a third party OS X “uninstaller” app.
+
+The two OS X uninstaller apps that we recommend are AppZapper ($13) and AppCleaner (Free). Both operate similarly: you launch the uninstaller app which gives you a blank “drop zone,” and you drag and drop the app you want to delete into the drop zone. AppZapper and AppCleaner will then scour your Mac for all of the associated support, preference, and data files that aren’t in the app’s self-contained bundle. These apps aren’t perfect, and do indeed miss things from time to time, but they’re generally a good place to start when trying to delete unwanted OS X apps.
+
+There’s just a small bit of configuration that we must do first before we can use either app to delete GarageBand. The apps’ developers didn’t want users to inadvertently try to delete key OS X apps like Finder and Safari, so they installed safeguards to “protect” Apple applications.
+
+AppZapper Preferences
+
+To temporarily disable this safeguard so that we can delete GarageBand, launch either app and go to its Preferences menu by clicking the app’s name in the Menu Bar and selecting Preferences. In AppZapper, uncheck the box “Keep Apple Applications Safe.” In AppCleaner, go to the General tab and uncheck the box “Protect Default Apps.”
+
+AppCleaner Delete GarageBand
+
+With these boxes unchecked, you’ll now be able to drag and drop the GarageBand.app file into the drop zone and see the various preference and support files that are associated with it. Browse the list to make sure nothing important was incorrectly included and then press Zap! or Delete to remove the files. Just as with the manual instructions above, a reboot following this process is a good idea.
+
+Once you delete GarageBand and its associated files, head back to the Preferences of either app and re-check the boxes that protect the deletion of default Apple applications. While handy, both of these apps can quickly get you in trouble if you delete the wrong files, so having that extra safeguard is key.
+
 ## Macbook itunes with AppSore
 
 https://www.macg.co/logiciels/2017/10/le-retour-de-lapp-store-sur-mac-avec-itunes-1263-99993
