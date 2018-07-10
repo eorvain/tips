@@ -1,5 +1,9 @@
 # tips macbook
 
+## Clean Hard drive Garage Band
+
+https://www.tekrevue.com/tip/delete-garageband/
+
 ## Macbook itunes with AppSore
 
 https://www.macg.co/logiciels/2017/10/le-retour-de-lapp-store-sur-mac-avec-itunes-1263-99993
