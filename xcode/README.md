@@ -15,6 +15,18 @@ https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-applic
 
 5. Documentation Browse and delete unnecessary data under ~/Library/Developer/Shared/Documentation/DocSets.
 
+## Clean Simulator
+
+Delete unavailable Simulator OS
+```
+xcrun simctl delete unavailable
+```
+
+Delete all installed applications
+```
+xcrun simctl erase all
+```
+
 ## XCode compatibility with iOS
 Path to simulator of an XCode :
 ```
