@@ -1,6 +1,5 @@
 # tips XCode
 
-
 ## Clean Hard drive XCode
 
 https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application
