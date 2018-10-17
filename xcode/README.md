@@ -62,3 +62,10 @@ open ~/Library/Developer/Xcode/iOS\ DeviceSupport/
 open ~/Library/Developer/CoreSimulator
 ```
 
+# Lines of code
+
+```
+brew install cloc
+cd path/to/project/
+cloc .
+```
