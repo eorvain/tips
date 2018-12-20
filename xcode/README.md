@@ -26,8 +26,8 @@ Delete all installed applications
 xcrun simctl erase all
 ```
 
-## XCode compatibility with iOS
-Path to simulator of an XCode :
+## Xcode compatibility with iOS
+Path to simulator of an Xcode :
 ```
 cd /Applications/Xcode9.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
 ```
@@ -36,18 +36,18 @@ Path to image of devices :
 cd ~/Library/Developer/Xcode/iOS\ DeviceSupport/
 ```
 
-
+From a device image to an Xcode (device->Xcode)
 ```
 sudo ln -s \
 ~/Library/Developer/Xcode/iOS\ DeviceSupport/10.0\ \(14A5309d\) \
 /Applications/Xcode9.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/10.0
 ```
-
+Froma a new Xcode to an old Xcode (old Xcode -> new Xcode) 
 ```
 sudo ln -s /Applications/Xcode9.4.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/11.3 /Applications/Xcode9.0.0.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/11.3
 ```
 
-## XCode Path
+## Xcode Path
 ### Xcode archive
 ```
 open ~/Library/Developer/Xcode/Archives/
