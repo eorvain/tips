@@ -28,8 +28,8 @@ lane :screenshot_audioquiz do
     snapshot(
     project: "quizz.xcodeproj",
     scheme: "fastlane.audioquizz",
-    languages: ["en-US", "fr-FR", "es-ES", "ja", "zh-Hans"],
-    devices: ["iPhone 6 Plus","iPad Air","iPad Pro (12.9 inch)"],
+    languages: ["en-US", "fr-FR", "de-DE","es-ES", "pt-BR", "ja", "zh-Hans"],
+    devices: ["iPhone 6 Plus","iPhone Xs Max","iPad Pro (12.9-inch) (2nd generation)","iPad Pro (12.9-inch) (3rd generation)"],
     clear_previous_screenshots: true,
     output_directory: "fastlane/screenshots_audioquizz"
 )
