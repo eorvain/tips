@@ -1,0 +1,40 @@
+# Fastlane
+## Fastlane version
+2.70.1
+## Get your fastlane version :
+```
+fastlane -v
+```
+## Fastlane - XCodebuild
+Got to Xcode -> Preferences -> Locations -> Command Line Tools
+
+## Download metadata
+fastlane.deliver.download_metadata.sh
+```
+fastlane deliver download_metadata \
+-m "fastlane/metadata_audioquiz" \
+-a "com.orvain.audioquizz.animal" \
+-u "djabolo@gmail.com" \
+-k "117904455" \
+\
+```
+
+## Snapshot
+### Build
+In Fastfile
+```
+#desc Take the screenshots
+lane :screenshot_audioquiz do
+    snapshot(
+    project: "quizz.xcodeproj",
+    scheme: "fastlane.audioquizz",
+    languages: ["en-US", "fr-FR", "es-ES", "ja", "zh-Hans"],
+    devices: ["iPhone 6 Plus","iPad Air","iPad Pro (12.9 inch)"],
+    clear_previous_screenshots: true,
+    output_directory: "fastlane/screenshots_audioquizz"
+)
+end
+```
+
+* Download metadata from itunes connect : fastlane.deliver.download_metadata.sh
+* Download screenshots from itunes connect : fastlane deliver download_screenshots
