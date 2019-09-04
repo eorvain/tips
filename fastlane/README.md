@@ -36,5 +36,11 @@ lane :screenshot_audioquiz do
 end
 ```
 
+## Frameit
+
+### Erreur sur les frame d'iPad 3rd generation
+
+https://github.com/fastlane/frameit-frames/issues/7
+
 * Download metadata from itunes connect : fastlane.deliver.download_metadata.sh
 * Download screenshots from itunes connect : fastlane deliver download_screenshots
