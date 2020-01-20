@@ -52,7 +52,7 @@ sudo ln -s /Applications/Xcode9.4.app/Contents/Developer/Platforms/iPhoneOS.plat
 ```
 open ~/Library/Developer/Xcode/Archives/
 ```
-## Xcode physical image Simulateur
+### Xcode physical image Simulateur
 ```
 open ~/Library/Developer/Xcode/iOS\ DeviceSupport/
 ```
@@ -60,6 +60,11 @@ open ~/Library/Developer/Xcode/iOS\ DeviceSupport/
 ### XCode Simulator paths
 ```
 open ~/Library/Developer/CoreSimulator
+```
+
+### Code snippets
+```
+open ~/Library/Developer/Xcode/UserData/CodeSnippets
 ```
 
 # Lines of code
