@@ -23,7 +23,7 @@ if [ -f ~/.zsh_aliases ]; then
 fi
 
 ```
-## Create .bash_aliases
+## Create .zsh_aliases
 
 ```
 vim ~/.zsh_aliases
