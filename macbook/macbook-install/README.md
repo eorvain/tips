@@ -25,6 +25,25 @@
 11. MySqlWorkbench
 12. sf symbols
 13. [Installer alias](https://bitbucket.org/manu2/tips/src/master/zsh/)
+14. Installer MongoDB
+
+```
+brew tap mongodb/brew
+brew install mongodb-community@4.4
+```
+
+15. Installer Vapor
+
+```
+brew tap vapor/tap
+brew install vapor/tap/vapor
+```
+
+16. Installer Image Magick 
+
+```
+brew install imagemagick)
+```
 
 ## Documentation
 1. Macdown
