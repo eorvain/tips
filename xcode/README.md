@@ -67,6 +67,14 @@ open ~/Library/Developer/CoreSimulator
 open ~/Library/Developer/Xcode/UserData/CodeSnippets
 ```
 
+## Add simulator device (device + OS)
+1. Open Xcode
+2. Open "Window" in tab
+3. Open "Devices and Simulators"
+4. Click on "+" at left bottom corner
+5. Select the device and Operating System
+
+
 # Lines of code
 
 ```
