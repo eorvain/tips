@@ -38,6 +38,26 @@ end
 
 ## Frameit
 
+### Keyword sans title
+
+Framefile.json
+
+```
+ "data": [
+        {
+            "filter": "1-Sim",
+            "show_complete_frame": true,
+            "keyword": {
+                "color": "#d21559"
+            },
+            "title": {
+            	   "color": "#FFFFFF01"
+            	   "text": "."
+            },
+            "stack_title" : false
+        },
+```
+
 ### Erreur sur les frame d'iPad 3rd generation
 
 https://github.com/fastlane/frameit-frames/issues/7
