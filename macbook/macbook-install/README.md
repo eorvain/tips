@@ -45,6 +45,12 @@ brew install vapor/tap/vapor
 brew install imagemagick)
 ```
 
+17. Installer Fastlane
+
+```
+brew install fastlane
+```
+
 ## Documentation
 1. Macdown
 2. Draw.io
