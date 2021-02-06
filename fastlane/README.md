@@ -13,15 +13,22 @@ fastlane.deliver.download_metadata.sh
 ```
 fastlane deliver download_metadata \
 -m "fastlane/metadata_audioquiz" \
--a "com.orvain.audioquizz.animal" \
--u "djabolo@gmail.com" \
--k "117904455" \
+-a "com.your.app" \
+-u "login@gmail.com" \
+-k "appid" \
 \
+```
+
+## Download screenshots
+
+```
+fastlane deliver download_screenshots --use_live_version true -a "com.your.app"
 ```
 
 ## Snapshot
 ### Build
 In Fastfile
+
 ```
 #desc Take the screenshots
 lane :screenshot_audioquiz do
