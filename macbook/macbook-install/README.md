@@ -51,6 +51,27 @@ brew install imagemagick)
 brew install fastlane
 ```
 
+18. Installer pip et PIL
+
+[https://stackoverflow.com/questions/65869296/installing-pip-is-not-working-in-python-3-6
+](https://stackoverflow.com/questions/65869296/installing-pip-is-not-working-in-python-3-6)
+
+```
+python3 -m pip install --upgrade "pip < 21.0"
+python -m pip install --upgrade "pip < 21.0"
+python -m pip install pillow
+```
+
+19. Finder : Afficher les fichiers cachés :
+
+Depuis le terminal :
+
+```
+defaults write com.apple.Finder AppleShowAllFiles true
+killall Finder
+```
+
+
 ## Documentation
 1. Macdown
 2. Draw.io
