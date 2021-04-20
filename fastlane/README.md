@@ -9,15 +9,39 @@ fastlane -v
 Got to Xcode -> Preferences -> Locations -> Command Line Tools
 
 ## Download metadata
-fastlane.deliver.download_metadata.sh
+vim fastlane.deliver.download_metadata.sh
+
 ```
+#! /bin/sh
 fastlane deliver download_metadata \
--m "fastlane/metadata_audioquiz" \
--a "com.your.app" \
--u "login@gmail.com" \
--k "appid" \
+--metadata_path "fastlane/metadata" \
+--app_identifier "com.your.app" \
+--username "xxx@gmail.com" \
+--team_id "teamid"
+\
+
+```
+
+## Download screenshots
+
+Change the line --use-live-version to false if there is no live version.
+
+```
+vim fastlane.deliver.download_screenshots.sh
+```
+
+```
+#! /bin/sh
+
+fastlane deliver download_screenshots \
+--use_live_version true 
+--screenshot_path "fastlane/screnshot_itc" \
+--app_identifier "com.sm4rtapp.scan.warehouse" \
+--username "djabolo@gmail.com" \
+--team_id "117904455"
 \
 ```
+
 
 ## Download screenshots
 
