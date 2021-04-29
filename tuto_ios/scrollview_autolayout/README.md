@@ -3,7 +3,6 @@
 # Scrollview Autolayout
 
 ```
-
 //
 //  ScrollTutorialView.swift
 //  ScanProduct
@@ -51,26 +50,34 @@ class ScrollTutorialView: UIView{
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        scrollView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        scrollView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
-        scrollView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            scrollView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            scrollView.widthAnchor.constraint(equalTo: widthAnchor),
+            scrollView.topAnchor.constraint(equalTo: topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
+        ])
         
-        contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
-        contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-        contentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+        ])
         
-        titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        // THIS IS SUPER IMPORTANT TO GIVE A CONTRAINT TO TOP OF CONTENT
-        titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        titleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
-
-        subtitleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 25).isActive = true
-        subtitleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
-        // THIS IS SUPER IMPORTANT TO GIVE A CONTRAINT TO BOTTOM OF CONTENT
-        subtitleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        NSLayoutConstraint.activate([
+            titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            // THIS IS SUPER IMPORTANT TO GIVE A CONTRAINT TO TOP OF CONTENT
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
+            titleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4),
+        ])
+        
+        NSLayoutConstraint.activate([
+            subtitleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 25),
+            subtitleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4),
+            // THIS IS SUPER IMPORTANT TO GIVE A CONTRAINT TO BOTTOM OF CONTENT
+            subtitleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        ])
     }
 }
 
@@ -86,7 +93,7 @@ struct ScrollTutorialViewRepresentable: UIViewRepresentable {
         view.titleLabel.textColor = .gray
         view.subtitleLabel.textColor = .gray
         view.subtitleLabel.text = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-
+        
         return view
     }
     
@@ -101,6 +108,5 @@ struct ScrollTutorialViewPreview: PreviewProvider {
     }
 }
 #endif
-
 ```
 
