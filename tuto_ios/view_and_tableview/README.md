@@ -1,5 +1,68 @@
 # tips developpement iOS
 
+# Custom View Controller
+
+```
+
+import UIKit
+
+class MyViewController: UIViewController{
+    
+    let myView = UIView()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+                
+        view.addSubview(myView)
+        
+        buildStyle()
+        buildConstraints()
+    }
+    
+    deinit{
+        print("dealloc \(self)")
+    }
+    
+    func buildStyle(){
+    }
+    
+    func buildConstraints(){
+        myView.translatesAutoresizingMaskIntoConstraints = false
+        //let guide = view.safeAreaLayoutGuide
+        let guide = view!
+        NSLayoutConstraint.activate([
+            myView.topAnchor.constraint(equalTo: guide.topAnchor),
+            myView.bottomAnchor.constraint(equalTo: guide.bottomAnchor),
+            myView.leftAnchor.constraint(equalTo: guide.leftAnchor),
+            myView.rightAnchor.constraint(equalTo: guide.rightAnchor),
+        ])
+    }
+}
+
+#if DEBUG && canImport(SwiftUI) && canImport(Combine)
+import SwiftUI
+
+@available(iOS 13.0, *)
+struct MyViewControllerRepresentable: UIViewRepresentable {
+  func makeUIView(context: Context) -> UIView {
+    let vc = MyViewController()
+    vc.myView.backgroundColor = .brown
+    return vc.view
+  }
+  
+  func updateUIView(_ view: UIView, context: Context) {
+  }
+}
+
+@available(iOS 13.0, *)
+struct MyViewControllerRepresentablePreview: PreviewProvider {
+  static var previews: some View {
+    MyViewControllerRepresentable().previewDevice(PreviewDevice(rawValue: "iPhone SE (2nd generation)"))
+  }
+}
+#endif
+```
+
 # Custom View
 
 ```
@@ -284,6 +347,34 @@ extension MyTableViewController:UITableViewDelegate{
         default:
             _ = 0
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let contentView = UIView()
+        let label = UILabel()
+        contentView.addSubview(label)
+        switch section {
+        case 0:
+            label.text = "Section 1"
+        case 1:
+            label.text = "Section 2"
+        case 2:
+            label.text = "Section 3"
+        default:
+            label.text = ""
+        }
+        contentView.backgroundColor = UIColor.white
+        label.font = UIFont.boldSystemFont(ofSize: 40)
+        label.textColor = UIColor.black
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.topAnchor.constraint(equalTo: contentView.topAnchor),
+            label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            label.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
+            label.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
+        ])
+        return contentView
     }
 }
 
