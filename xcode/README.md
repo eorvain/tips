@@ -1,6 +1,6 @@
-# tips XCode
+# tips Xcode
 
-## Clean Hard drive XCode
+## Clean Hard drive Xcode
 
 https://apple.stackexchange.com/questions/287307/reduce-size-of-the-xcode-application
 
@@ -57,9 +57,14 @@ open ~/Library/Developer/Xcode/Archives/
 open ~/Library/Developer/Xcode/iOS\ DeviceSupport/
 ```
 
-### XCode Simulator paths
+### Xcode Simulator paths
 ```
 open ~/Library/Developer/CoreSimulator
+```
+
+### Xcode simulator device list
+````
+open ~/Library/Developer/CoreSimulator/Devices/device_set.plist 
 ```
 
 ### Code snippets
