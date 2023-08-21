@@ -2,6 +2,12 @@
 https://github.com/rbenv/rbenv
 
 # Install a new version of ruby
+
+```
+# Liste des version de ruby installées
+rbenv versions
+```
+
 Si le fichier ~/.rbenv/plugin/ruby-build n'existe pas, alors éxécuter cette commande
 ```
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
@@ -25,7 +31,7 @@ rbenv local
 # install a Ruby version:
 ```
 rbenv install 3.2.2
-````
+```
 
 # choose local Ruby version 3.2.2:
 ```
