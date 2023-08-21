@@ -4,7 +4,7 @@ https://github.com/rbenv/rbenv
 # Get version of ruby
 ```
 # Get global version
-rbenv system
+rbenv global
 # Get local version
 rbenv local
 ```
