@@ -23,17 +23,27 @@ rbenv local
 ```
 
 # install a Ruby version:
+```
 rbenv install 3.2.2
+````
 
 # choose local Ruby version 3.2.2:
+```
 rbenv local 3.2.2
+```
 
 # choose global Ruby version 3.2.2:
+```
 rbenv global 3.2.2
 rbenv global system
+```
 
 # system version
+```
 /usr/bin/ruby -v
+```
 
 # local version 
+```
 cat .ruby-version 
+```
