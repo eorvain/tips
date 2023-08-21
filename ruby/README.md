@@ -1,6 +1,14 @@
 
 https://github.com/rbenv/rbenv
 
+# Get version of ruby
+```
+# Get global version
+rbenv system
+# Get local version
+rbenv local
+```
+
 # install a Ruby version:
 rbenv install 3.1.2
 
