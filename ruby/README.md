@@ -33,13 +33,11 @@ rbenv local
 rbenv install 3.2.2
 ```
 
-# choose local Ruby version 3.2.2:
+# choose a version of Ruby local Ruby version 3.2.2:
 ```
+# changement local (version du dossier)
 rbenv local 3.2.2
-```
-
-# choose global Ruby version 3.2.2:
-```
+# changement global
 rbenv global 3.2.2
 rbenv global system
 ```
