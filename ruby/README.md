@@ -21,7 +21,7 @@ Si le fichier ~/.rbenv/plugin/ruby-build n'existe pas, alors éxécuter cette co
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ```
 
-Si le fichier existe, alors faire `git pull`dans le dossier `plugin/ruby-build`
+Si le fichier existe, alors faire `git pull`dans le dossier `"$(rbenv root)"/plugins/ruby-build` ou `~/.rbenv/plugins/ruby-build `
 
 ```
 # Vérifier que la mise à jour a bien été faite, la commande suivante doit lister les dernière mise à jour de ruby :
