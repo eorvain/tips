@@ -1,6 +1,12 @@
 
 https://github.com/rbenv/rbenv
 
+# Install a new Ruby version on the computer
+
+```
+rbenv install 3.2.2
+```
+
 # Update the installable ruby versions
 
 List the ruby versions installed on the computer. 
@@ -30,12 +36,7 @@ rbenv global
 rbenv local
 ```
 
-# install a Ruby version:
-```
-rbenv install 3.2.2
-```
-
-# choose a version of Ruby local Ruby version 3.2.2:
+# Set a version of Ruby
 ```
 # changement local (version du dossier)
 rbenv local 3.2.2
@@ -44,12 +45,12 @@ rbenv global 3.2.2
 rbenv global system
 ```
 
-# system version
+# Show the active system version
 ```
 /usr/bin/ruby -v
 ```
 
-# local version 
+# Show the active local version 
 
 The local version is stored in `.ruby-version` of the directory
 
