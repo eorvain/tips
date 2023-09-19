@@ -48,6 +48,9 @@ rbenv global system
 ```
 
 # local version 
+
+The local version is stored in `.ruby-version` of the directory
+
 ```
 cat .ruby-version 
 ```
