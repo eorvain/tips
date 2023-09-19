@@ -3,8 +3,10 @@ https://github.com/rbenv/rbenv
 
 # Install a new version of ruby
 
+List the ruby versions installed on the computer. 
+An asterix shows the active ruby version. The ruby active version change depending on the directory from which you launch the command.
+
 ```
-# Liste des version de ruby installées
 rbenv versions
 ```
 
