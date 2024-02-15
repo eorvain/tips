@@ -10,7 +10,7 @@ rbenv install 3.2.2
 
 ```
 rbenv uninstall 2.7.2
-````
+```
 
 
 # Update the installable ruby versions
