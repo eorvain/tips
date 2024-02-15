@@ -2,11 +2,16 @@ ruby / rbenv / bundler / gem
 
 https://github.com/rbenv/rbenv
 
-# Install a new Ruby version on the computer
+# Install/Uninstall a Ruby version on the computer
 
 ```
 rbenv install 3.2.2
 ```
+
+```
+rbenv uninstall 2.7.2
+````
+
 
 # Update the installable ruby versions
 
