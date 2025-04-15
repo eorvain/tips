@@ -26,7 +26,7 @@ cat id_gitlab_rsa.pub
 cp id_gitlab_rsa ~/.ssh/
 ```
 
-4 - Edit known-host
+4 - Edit config file
 
 ```
 # Private GitLab instance
