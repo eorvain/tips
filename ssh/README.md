@@ -2,43 +2,57 @@
 1- Create the public and private key
 
 ```
-ssh-keygen -t rsa -b 2048 -C "email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 You'll see a response similar to:
 
 ```
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/user/.ssh/id_rsa):
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/user/.ssh/id_ed15519):
 ```
 
-File name exemple : id_gitlab_rsa
+File name exemple : id_gitlab_25519
 
 2 - Copy public key on Gitlab
 
 ```
-cat id_gitlab_rsa.pub
+cat id_gitlab_ed15519.pub
 ```
 
 3 - copy private key in .ssh/ folder
 
 ```
-cp id_gitlab_rsa ~/.ssh/
+cp id_gitlab_ed15519 ~/.ssh/
 ```
 
 4 - Edit config file
 
 ```
-# Private GitLab instance
-Host gitlab.viseo.com
-  Preferredauthentications publickey
-  IdentityFile ~/.ssh/id_gitlab_rsa
+# Github
+Host github.com
+  # AddKeysToAgent yes
+  # UseKeychain yes
+  # IdentityFile ~/.ssh/id_ed25519
 ```
 
 5 - ssh agent
 
 ```
 eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_gitlab_rsa
 ```
+
+6 - add key from ssh
+
+```
+ssh-add ~/.ssh/id_ed25519
+```
+
+7 - remove key from ssh
+
+```
+ssh-add -d ~/.ssh/id_ed25519
+```
+
+
 
