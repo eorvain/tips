@@ -12,6 +12,7 @@ rbenv install 3.2.2
 rbenv uninstall 2.7.2
 ```
 
+Les version ruby sont installées dans le dossier ~/.rbenv/
 
 # Update the installable ruby versions
 
